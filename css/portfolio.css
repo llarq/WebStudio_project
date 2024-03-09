@@ -1,0 +1,32 @@
+header a {
+    color: black;
+}
+.WebStudio-frst {
+    color: blue;
+}
+.number {
+    color: grey;
+}
+
+
+button {
+    background-color: #F5F4FA;
+    color: black;
+}
+ main p {
+    color: grey;
+}
+
+
+footer {
+    background-color: #2F303A;
+}
+footer a {
+    color: grey;
+}
+.WebStudio-scnd {
+    color: blue;
+}
+h2 {
+    display: none;
+}

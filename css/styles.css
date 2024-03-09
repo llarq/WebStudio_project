@@ -11,13 +11,22 @@ header a {
 main p {
     color: grey;
 }
-.sect-first  {
+.sect-first {
     color: white;
     background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
+    text-align: center;
+
+}
+h1 {
+font-size: 44px;
 }
 .sect-first button {
     color: white;
-    background-color: #2196F3;  
+    background-color: #2196F3;
+    height: 50px;
+    width: 216px;  
 }
 
 footer {

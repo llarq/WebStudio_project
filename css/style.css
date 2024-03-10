@@ -1,66 +1,51 @@
 :root {
     --main-heading-color: #212121;
     --main-p-color: #757575;
-    --main-current-color: #2196F3;
     --main-background-color: #2F303A;
+     --main-current-color: #2196F3; 
 }
-
 
 nav span {
     color: #2196F3;
 }
 header .WebStudio {
     color: #000000;
-    font-size: 26px;
     text-decoration: none;
-}
-ul {
-    list-style-type: none;
+    font-size: 26px;
 }
 .link {
     color: var(--main-heading-color);
     text-decoration: none;
 }
+ul {
+    list-style-type: none;
+}
 .link.current {
     color: var(--main-current-color);
 }
-.link.number {
+ .link.number {
     color: var(--main-p-color);
 }
 
+main p {
+    color: var(--main-p-color);
+}
+.sect { 
+    color: white;
+    background-color: var(--main-background-color);
+    width: 1600px;
+    height: 600px;
+    text-align: center;
+}
 h1 {
-    display: none;
+font-size: 44px;
 }
-button {
-    background-color: #F5F4FA;
-    color: var(--main-heading-color);
-    font-size: medium;
-}
-.btn-all {
-    width: 73px;
-    height: 38px;
+.sect button {
+    color: white;
     background-color: var(--main-current-color);
+    height: 50px;
+    width: 216px;  
 }
-.btn-web {
-    width: 125px;
-    height: 38px;
-}
-.btn-app {
-    width: 112px;
-    height: 38px;
-}
-.btn-dsgn {
-    width: 103px;
-    height: 38px;
-}
-.btn-mark {
-    width: 130px;
-    height: 38px;
-}
- main p {
-    color: var(--main-p-color);
-}
-
 
 footer {
     background-color: var(--main-background-color);
@@ -72,7 +57,6 @@ footer a {
 }
 footer .WebStudio {
     color: #FFFFFF;
-    text-decoration: none;
     font-size: 26px;
 }
 footer span {

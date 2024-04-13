@@ -60,8 +60,6 @@ main p {
 .main-section { 
     color: white;
     background-color: var(--main-background-color);
-    width: 1600px;
-    height: 600px;
     text-align: center;
 }
 h1 {
@@ -84,6 +82,7 @@ footer a {
 }
 .footer-logo {
     font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 700;
     color: #FFFFFF;
     font-size: var(--title-main-webstudio);

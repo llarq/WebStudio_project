@@ -2,35 +2,47 @@
     --main-heading-color: #212121;
     --main-p-color: #757575;
     --main-background-color: #2F303A;
-     --main-current-color: #2196F3; 
+    --main-current-color: #2196F3;
+    --main-text-size: 14px;
+    --title-text-size: 36px;
+    --title-main: 44px;
+    --title-main-webstudio: 26px;
+    --main-scnd-text-size: 16px;
+    --font-family: var(--font-family);  
 }
 
+/* index */
+
 nav span {
-    color: #2196F3;
+    color: var(--main-current-color);
 }
-header .WebStudio {
+.header-link-webstudio {
     color: #000000;
     text-decoration: none;
-    font-size: 26px;
+    font-size: var(--title-main-webstudio);
 }
-.link {
+.header-link {
     color: var(--main-heading-color);
     text-decoration: none;
 }
 ul {
     list-style-type: none;
 }
-.link.current {
+.header-link-current {
     color: var(--main-current-color);
 }
- .link.number {
+ .header-link-number {
     color: var(--main-p-color);
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--main-current-color);
 }
 
 main p {
     color: var(--main-p-color);
 }
-.sect { 
+.main-section { 
     color: white;
     background-color: var(--main-background-color);
     width: 1600px;
@@ -38,9 +50,9 @@ main p {
     text-align: center;
 }
 h1 {
-font-size: 44px;
+font-size: var(--title-main);
 }
-.sect button {
+.main-button {
     color: white;
     background-color: var(--main-current-color);
     height: 50px;
@@ -49,19 +61,57 @@ font-size: 44px;
 
 footer {
     background-color: var(--main-background-color);
-    font-size: 14px;
+    font-size: var(--main-text-size);
 }
 footer a {
     color: rgba(255, 255, 255, 60%);
     text-decoration: none;
 }
-footer .WebStudio {
+.footer-link-webstudio {
     color: #FFFFFF;
-    font-size: 26px;
+    font-size: var(--title-main-webstudio);
 }
 footer span {
     color: var(--main-current-color);
 }
 footer p {
     color: #FFFFFF;
+}
+a {
+    text-decoration: none;
+}
+.header-link-gmail {
+    color: var(--main-current-color);
+}
+
+/* portfolio */
+
+.main-title {
+    display: none;
+}
+button {
+    background-color: #F5F4FA;
+    color: var(--main-heading-color);
+    font-size: medium;
+}
+.main-btn-all {
+    width: 73px;
+    height: 38px;
+    background-color: var(--main-current-color);
+}
+.main-btn-web {
+    width: 125px;
+    height: 38px;
+}
+.main-btn-app {
+    width: 112px;
+    height: 38px;
+}
+.main-btn-dsgn {
+    width: 103px;
+    height: 38px;
+}
+.main-btn-mark {
+    width: 130px;
+    height: 38px;
 }

@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
+    <div class="container flex">
+        <nav class="header-nav flex">
             <a href="./index.html" lang="en" class="header-logo"><span>Web</span>Studio</a>
-            <ul class="header-list">
+            <ul class="header-list flex">
                 <li class="header-list-item">
                     <a href="./index.html" class="header-link">Студія</a>
                 </li>
@@ -26,7 +28,7 @@
                 </li>
             </ul>
         </nav>
-        <ul class="header-list">
+        <ul class="header-list flex contacts">
             <li class="header-list-item">
                 <a href="mailto:info@devstudio.com" class="header-link-gmail">info@devstudio.com</a>
             </li>
@@ -34,26 +36,28 @@
                 <a href="tel:+380961111111" class="header-link-number">+380961111111</a>
             </li>
         </ul>
+    </div>
     </header>
     <main class="main">
     <section class="main-portfolio">
+        <div class="container">
         <h1 class="main-title">Портфоліо</h1>
-        <nav class="main-nav">
-            <ul class="main-list">
+        <nav class="main-nav flex">
+            <ul class="main-list flex">
                 <li class="main-list-item">
-                    <button type="button" class="main-btn-all">Усі</button>
+                    <button type="button" class="main-btn-all btn-portfolio">Усі</button>
                 </li>
                 <li class="main-list-item">
-                    <button type="button" class="main-btn-web">Веб-сайти</button>
+                    <button type="button" class="main-btn-web btn-portfolio">Веб-сайти</button>
                 </li>
                 <li class="main-list-item">
-                    <button type="button" class="main-btn-app">Додатки</button>
+                    <button type="button" class="main-btn-app btn-portfolio">Додатки</button>
                 </li>
                 <li class="main-list-item">
-                    <button type="button" class="main-btn-dsgn">Дизайн</button>
+                    <button type="button" class="main-btn-dsgn btn-portfolio">Дизайн</button>
                 </li>
                 <li class="main-list-item">
-                    <button type="button" class="main-btn-mark">Маркетинг</button>
+                    <button type="button" class="main-btn-mark btn-portfolio">Маркетинг</button>
                 </li>
             </ul>
         </nav>
@@ -104,16 +108,18 @@
                 <p class="project-description">Додаток</p>
             </li>
         </ul>
+    </div>
     </section>
     </main>
     <footer class="footer">
+    <div class="container">
         <a href="index.html" lang="en" class="footer-logo"><span>Web</span>Studio</a>
         <address class="footer-adress">
             <p class="footer-street">м. Київ, пр-т Лесі Українки, 26</p>
                 <a href="mailto:info@devstudio.com" class="footer-link-gmail">info@devstudio.com</a>
-                <br>
                 <a href="tel:+380961111111" class="footer-link-number">+380961111111</a>
         </address>
+    </div>
     </footer>
 </body>
 </html>

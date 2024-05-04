@@ -1,0 +1,23 @@
+h1, h2, h3, h4, p {
+    margin: 0;
+    }
+    
+    ul {
+    margin: 0 auto;
+    padding: 0 auto;
+    list-style-type: none;
+    }
+    
+    address {
+    font-style: normal;
+    }
+    /* .features-list {
+        padding-left: 0;
+    }
+    .work-list {
+        padding-left: 0;
+    }
+    .team-list {
+        padding-left: 0;
+    } */
+    

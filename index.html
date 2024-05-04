@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
    <header class="header">
-        <nav class="header-nav">
+    <div class="container flex">
+        <nav class="header-nav flex">
             <a href="./index.html" lang="en" class="header-logo"><span>Web</span>Studio</a>
-            <ul class="header-list-">
+            <ul class="header-list flex">
                 <li class="header-list-item">
                     <a href="./index.html" class="header-link-current">Студія</a>
                 </li>
@@ -26,7 +28,7 @@
                 </li>
             </ul>
         </nav>
-        <ul class="header-list">
+        <ul class="header-list flex contacts">
             <li class="header-list-item">
                 <a href="mailto:info@devstudio.com" class="header-link-gmail">info@devstudio.com</a>
             </li>
@@ -34,14 +36,18 @@
                 <a href="tel:+380961111111" class="header-link-number">+380961111111</a>
             </li>
         </ul>
+    </div>
     </header>
     <!--main-->
     <main>
-        <section class="main-section">
-            <h1 class="main-section-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
-            <button type="button" class="main-button">Замовити послугу</button>
+        <section class="main-section section">
+            <div class="container">
+                <h1 class="main-section-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
+                <button type="button" class="main-button">Замовити послугу</button>
+            </div>
         </section>
         <section class="features">
+        <div class="container">
             <h2 class="features-main-title">Особливості</h2>
             <ul class="features-list">
                 <li class="features-list-item">
@@ -51,26 +57,28 @@
                     </p>
                 </li>
                 <li class="features-list-item">
-                    <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <h3 class="features-title">Пунктуальність</h3>
                     <p class="features-description">
                         Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                     </p>
                 </li>
                 <li class="features-list-item">
-                    <h3 class="features-title">ПЛАНУВАННЯ</h3>
+                    <h3 class="features-title">Планування</h3>
                     <p class="features-description">
                         Так само консультація з широким активом значною мірою зумовлює.
                     </p>
                 </li>
                 <li class="features-list-item">
-                    <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <h3 class="features-title">Сучасні технології</h3>
                     <p class="features-description">
                         Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                     </p>
                 </li>
             </ul>
+        </div>
         </section>
-        <section class="work">
+        <section class="work section">
+        <div class="container">
             <h2 class="work-main-title">Чим ми займаємося</h2>
             <ul class="work-list">
                 <li class="work-list-item">
@@ -83,8 +91,10 @@
                     <img src="./images/main/design.jpg" alt="design" width="370" height="294" class="work-image">
                 </li>
             </ul>
+        </div>
         </section>
-        <section class="team">
+        <section class="team section">
+        <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list-item">
@@ -108,17 +118,19 @@
                     <p class="team-proffesion">UI Designer</p>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
+    <!--footer-->
     <footer class="footer">
-        <!--footer-->
+    <div class="container">
         <a href="index.html" lang="en" class="footer-logo"><span>Web</span>Studio</a>
         <address class="footer-adress">
             <p class="footer-street">м. Київ, пр-т Лесі Українки, 26</p>
                 <a href="mailto:info@devstudio.com" class="footer-link-gmail">info@devstudio.com</a>
-                <br>
                 <a href="tel:+380961111111" class="footer-link-number">+380961111111</a>
         </address>
+    </div>
     </footer> 
 </body>
 </html>

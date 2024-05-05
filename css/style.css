@@ -26,7 +26,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px dashed red;
+    /* outline: 2px dashed red; */
 }
 .flex {
     display: flex;
@@ -39,6 +39,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
     /* display: flex;
     align-items: center; */
 }
@@ -58,7 +59,7 @@ body {
     color: #FFFFFF;
 }
 .contacts {
-    margin-left: auto;
+    margin-right: 0;
     align-items: center;
     gap: 50px;
 }
@@ -66,18 +67,29 @@ body {
 .features  {
     padding-top: 94px;
 }
+/* .features-list-item {
+    width: 270px;
+} */
 .features-title {
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+.features-description{
+    font-weight: 400;
+    font-size: var(--main-text-size);
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
 }
 .features-main-title {
     display: none;
 }
 .features-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     padding-left: 0;
 }
+
 
 .work-main-title {
     text-align: center;
@@ -157,12 +169,11 @@ nav span {
 .header-link-current {
     color: var(--main-current-color);
 }
- .header-link-number {
+ .number {
     color: var(--main-text-color);
 }
-.header-list:hover,
-.header-list:focus{
-    color: var(--main-current-color);
+.gmail {
+    color: var(--main-text-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -256,26 +267,43 @@ button {
     color: var(--main-heading-color);
     font-size: medium;
 }
+.btn-portfolio {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: var(--main-scnd-text-size);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-heading-color);
+    border: 4px;
+}
+.btn-portfolio:hover{
+    background-color: var(--main-current-color);
+    color: #FFFFFF;
+}
 .main-btn-all {
     width: 73px;
     height: 38px;
-    background-color: var(--main-current-color);
+    border-radius: 4px;
 }
 .main-btn-web {
     width: 125px;
     height: 38px;
+    border-radius: 4px;
 }
 .main-btn-app {
     width: 112px;
     height: 38px;
+    border-radius: 4px;
 }
 .main-btn-dsgn {
     width: 103px;
     height: 38px;
+    border-radius: 4px;
 }
 .main-btn-mark {
     width: 130px;
     height: 38px;
+    border-radius: 4px;
 }
 
 .main-projects {
@@ -286,10 +314,14 @@ button {
     width: 100%;
     padding-left: 0;
 }
+.project-info {
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 20px 24px;
+}
 .project-title {
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .project-description {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }

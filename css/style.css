@@ -47,7 +47,31 @@ body {
 .main-section {
     padding-top: 200px;
     padding-bottom: 200px;
+    color: white;
+    background-color: var(--main-background-color);
+    background-image:
+    linear-gradient(
+    180deg, 
+    rgba(47, 48, 58, 0.4) 0%, 
+    rgba(130, 132, 160, 0.4) 100%),
+    url(/images/main/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
+
+.main-button {
+    padding: 10px 32px;
+    border: 0;
+    border-radius: 4px;
+    min-width: 216px;   
+    color: white;
+    background-color: var(--main-current-color);
+    height: 50px;
+    width: 216px;  
+}
+
 .main-section-title {
     margin-bottom: 30px;
     font-weight: 900;
@@ -67,9 +91,29 @@ body {
 .features  {
     padding-top: 94px;
 }
-/* .features-list-item {
-    width: 270px;
-} */
+.features-list-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.features-list-item.antena::before {
+    background-image: url(../images/main/antenna.svg);
+}
+.features-list-item.clock::before {
+    background-image: url(../images/main/clock.svg);
+}
+.features-list-item.diagram::before {
+    background-image: url(../images/main/diagram.svg);
+}
+.features-list-item.astronaut::before {
+    background-image: url(../images/main/astronaut.svg);
+}
 .features-title {
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -81,9 +125,9 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
-.features-main-title {
+/* .features-main-title {
     display: none;
-}
+} */
 .features-list {
     display: flex;
     gap: 30px;
@@ -183,23 +227,6 @@ nav span {
 main p {
     color: var(--main-text-color);
 }
-.main-section { 
-    color: white;
-    background-color: var(--main-background-color);
-    text-align: center;
-}
-
-.main-button {
-    padding: 10px 32px;
-    border: 0;
-    border-radius: 4px;
-    min-width: 216px;   
-    color: white;
-    background-color: var(--main-current-color);
-    height: 50px;
-    width: 216px;  
-}
-
 
 h2,h3 {
     color: var(--main-heading-color);
@@ -246,6 +273,19 @@ a {
     color: var(--main-text-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    }
+
 /* portfolio */
 
 
@@ -279,6 +319,10 @@ button {
 .btn-portfolio:hover{
     background-color: var(--main-current-color);
     color: #FFFFFF;
+    box-shadow: 
+    0 2px 2px 0 rgba(0, 0, 0, 0.12), 
+    0 1px 2px 0 rgba(0, 0, 0, 0.08), 
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .main-btn-all {
     width: 73px;
@@ -313,6 +357,12 @@ button {
     row-gap: 30px;
     width: 100%;
     padding-left: 0;
+}
+.main-project-list:hover {
+    box-shadow:
+    1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+    0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .project-info {
     border: 1px solid #eee;

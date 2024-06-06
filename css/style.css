@@ -177,6 +177,12 @@ body {
     background-color: #FFFFFF;
     text-align: center;
 }
+.team-list-item:hover {
+    box-shadow:
+    0 2px 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
 .footer {
     padding: 60px;
     padding-bottom: 60px;
@@ -357,6 +363,10 @@ button {
     row-gap: 30px;
     width: 100%;
     padding-left: 0;
+}
+.main-project-list {
+    flex-basis: 200px;
+    
 }
 .main-project-list:hover {
     box-shadow:

@@ -54,7 +54,7 @@ body {
     180deg, 
     rgba(47, 48, 58, 0.4) 0%, 
     rgba(130, 132, 160, 0.4) 100%),
-    url(/images/main/team.jpg);
+    url("/images/main/team.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

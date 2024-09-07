@@ -26,7 +26,7 @@
           >
           <ul class="header-list flex">
             <li class="header-list-item">
-              <a href="./index.html" class="header-link-current">Студія</a>
+              <a href="./index.html" class="header-link current">Студія</a>
             </li>
             <li class="header-list-item">
               <a href="./portfolio.html" class="header-link">Портфоліо</a>
@@ -64,7 +64,7 @@
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button type="button" class="main-button">Замовити послугу</button>
+          <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features">
@@ -113,6 +113,7 @@
                 height="294"
                 class="work-image"
               />
+              <p class="work-list-description">Десктопні додатки</p>
             </li>
             <li class="work-list-item">
               <img
@@ -122,6 +123,7 @@
                 height="294"
                 class="work-image"
               />
+              <p class="work-list-description">Мобільні додатки</p>
             </li>
             <li class="work-list-item">
               <img
@@ -131,6 +133,7 @@
                 height="294"
                 class="work-image"
               />
+              <p class="work-list-description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -478,7 +481,60 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h4 class="footer-subscribe-title">Підпишіться на розсилку</h4>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <input type="email" placeholder="E-mail" class="footer-subscribe-input">
+            </label>
+            <button class="footer-subscribe-button">Підписатися <svg width="24px" height="24px" class="footer-subscribe-icon"><use href="./images/main/symbol-defs.svg#send-icon"></use></svg></button>
+          </form>
+        </div>
       </div>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <button class="modal-close-btn" data-modal-close>
+        <svg width="18px" height="18px">
+          <use href="./images/main/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="modal-form">
+        <div class="modal-field">
+          <label class="modal-label">
+            Ім'я
+            <input type="text" class="modal-input">
+          </label>
+        </div>
+        <div class="modal-field">
+          <label class="modal-label">
+            Телефон
+            <input type="tel" class="modal-input">
+          </label>
+        </div>
+        <div class="modal-field">
+          <label class="modal-label">
+            Пошта
+            <input type="email" class="modal-input">
+          </label>
+        </div>
+        <div class="modal-field">
+          <label class="modal-label">
+            Коментар
+            <textarea name="" id="" class="modal-textarea" placeholder="Введіть текст"></textarea>
+          </label>
+        </div>
+        <div class="modal-field">
+          <label for="">
+            <input type="checkbox" name="checkbox" class="modal-checkbox">Погоджуюся з розсилкою та приймаю <a href=""><span class="modal-checkbox-span">Умови договору</span></a>
+            </label>
+        </div>
+      </form>
+      </div>
+      </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
